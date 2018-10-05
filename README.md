@@ -31,6 +31,5 @@ const AUTH_GMAPS = 'YOUR_API_KEY';
 
 - **CORE:** Shorten request url generation code
 - **CORE:** Make the map show every single marker created
-- **CORE:** include the config file with the repo
 - Resolve security implications in a better way
 - Convert everything to a React solution, perhaps?
