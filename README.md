@@ -10,11 +10,10 @@
 - Google Maps API credentials (key)
 
 ## Setting up
-
-Clone the repo.
-Install all the packages.
-Build the css.
-Create a ```config.js``` file in the **scripts/** folder and apply the following structure:
+- Clone the repo
+- Install all the packages (```npm install```)
+- Build the css (```gulp```)
+- Change credentials in ```config.js```:
 ``` javascript
 // Change to your FourSquare credentials, you can keep the version
 const AUTH_4SQUARE = {
@@ -26,12 +25,11 @@ const AUTH_4SQUARE = {
 const AUTH_GMAPS = 'YOUR_API_KEY';
 
 ```
-Ready!
+- Open ```index.html```
 
 ## TODO-s:
 
 - **CORE:** Shorten request url generation code
 - **CORE:** Make the map show every single marker created
-- **CORE:** include the config file with the repo
 - Resolve security implications in a better way
 - Convert everything to a React solution, perhaps?
