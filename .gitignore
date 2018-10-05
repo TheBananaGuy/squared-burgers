@@ -1,5 +1,6 @@
 # own ignores
 ignore/
+dist/
 config.js
 
 
