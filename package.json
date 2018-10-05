@@ -1,13 +1,24 @@
 {
-  "name": "4square&gmaps",
+  "name": "squared-burgers",
   "version": "1.0.0",
-  "description": "Trial task",
-  "main": "script.js",
+  "description": "venue finder",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheBananaGuy/squared-burgers.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
   "author": "Sonic",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheBananaGuy/squared-burgers/issues"
+  },
+  "homepage": "https://github.com/TheBananaGuy/squared-burgers#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
