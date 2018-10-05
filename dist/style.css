@@ -1,0 +1,89 @@
+body, h1, h2, html {
+  font-family: Arial,sans-serif; }
+
+#app, .venuePhoto, .venuePhoto img, .wrapper, header {
+  box-sizing: border-box; }
+
+body, html {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  min-height: 100vh;
+  display: block;
+  position: relative;
+  font-size: 1.1rem;
+  color: #FFF;
+  font-weight: 300; }
+
+body {
+  background: #e5497d;
+  background: linear-gradient(45deg, #e5497d 0, #545bea 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5497d', endColorstr='#545bea', GradientType=1 ); }
+
+.wrapper {
+  max-width: 1700px;
+  margin: auto;
+  padding: 22px; }
+
+.clearfix {
+  clear: both; }
+
+.is-hidden {
+  display: none !important; }
+
+@media all and (max-width: 680px) {
+  body, html {
+    font-size: 1rem; } }
+
+h1 {
+  font-size: 3.3rem;
+  color: #FFF; }
+
+.fat {
+  font-weight: 800; }
+
+header {
+  padding: 0 22px;
+  margin: 44px 0 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; }
+
+header h1 {
+  margin: 0;
+  padding: 0;
+  display: inline-block; }
+
+#map {
+  height: 790px;
+  border-radius: 5px;
+  color: #707070; }
+
+@media all and (max-width: 959px) {
+  #indicator {
+    display: none; }
+  #map {
+    height: 360px; }
+  .map-wrapper {
+    padding: 0 11px; } }
+
+#app {
+  margin: 0;
+  padding: 22px 0;
+  width: 100%; }
+
+.venuePhoto {
+  display: inline-block;
+  margin: 0;
+  padding: 11px;
+  width: 25%; }
+
+.venuePhoto img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 1px solid #707070; }
+
+@media all and (max-width: 959px) {
+  .venuePhoto {
+    width: 50%; } }

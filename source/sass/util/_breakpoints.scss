@@ -1,0 +1,54 @@
+﻿$palm-small:         481px !default;
+$lap-start:          681px !default;
+$desk-start:         960px !default;
+$desk-wide-start:    1280px !default;
+$ultra-wide:         1700px !default;
+$palm-end:           ($lap-start - 1px) !default;
+$lap-end:            ($desk-start - 1px) !default;
+$desk-end:           ($desk-wide-start - 1px) !default;
+
+@mixin media($media) {
+    @if $media == 'palm-small' {
+        @media all and (max-width: $palm-small) { @content; }
+    }
+
+    @if $media == 'palm' {
+        @media all and (max-width: $palm-end) { @content; }
+    }
+
+    @if $media == 'lap' {
+        @media all and (min-width: $lap-start) and (max-width:$lap-end) { @content; }
+    }
+
+    @if $media == 'lap-and-up' {
+        @media all and (min-width: $lap-start) { @content; }
+    }
+
+    @if $media == 'portable' {
+        @media all and (max-width: $lap-end) { @content; }
+    }
+
+    @if $media == 'below-desk'{
+        @media all and (max-width: $desk-start) { @content; }
+    }
+
+    @if $media == 'desk'{
+        @media all and (min-width: $desk-start) and (max-width: $desk-wide-start) { @content; }
+    }
+
+    @if $media == 'desk-and-up'{
+        @media all and (min-width: $desk-start) { @content; }
+    }
+
+    @if $media == 'below-desk-wide'{
+        @media all and (max-width: $desk-wide-start) { @content; }
+    }
+
+    @if $media == 'desk-wide'{
+        @media all and (min-width: $desk-wide-start) { @content; }
+    }
+
+    @if $media == 'ultra-wide'{
+        @media all and (min-width: $ultra-wide) { @content; }
+    }
+}

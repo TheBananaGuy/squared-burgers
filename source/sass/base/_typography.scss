@@ -1,0 +1,22 @@
+﻿body, html {
+    font-size: 1.1rem;
+    color: $color__white;
+    font-family: $font--primary;
+    font-weight: 300;
+    @include media('palm') {
+        font-size: 1rem;
+    }
+}
+
+h1, h2 {
+    font-family: $font--heading;
+}
+
+h1 {
+    font-size: 3.3rem;
+    color: $color__white;
+}
+
+.fat {
+    font-weight: 800;
+}

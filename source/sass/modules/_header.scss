@@ -1,0 +1,19 @@
+header {
+	@include box-sizing(border-box);
+	padding: 0 $spacing;
+	margin: $spacing--xlarge 0 $spacing 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	h1 {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+	}
+}
+
+#indicator {
+	@include media(portable) {
+		display: none;
+	}
+}

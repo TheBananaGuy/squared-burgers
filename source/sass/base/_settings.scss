@@ -1,0 +1,22 @@
+﻿// spacing
+$spacing: 22px;
+$spacing--small: $spacing/2;
+$spacing--large: $spacing*1.5;
+$spacing--xlarge: $spacing*2;
+
+// transition
+$transition--slow: all 0.5s ease-in-out;
+$transition--regular: all 0.25s ease-in-out;
+$transition--fast: all 0.1s ease-in-out;
+
+// fonts
+$font--primary: Arial, sans-serif;
+$font--heading: Arial, sans-serif;
+
+// dev colors
+$color__black: #000000;
+$color__white: #FFFFFF;
+$color__red: #FF0000;
+$color__green: #00FF00;
+$color__blue: #0000FF;
+$color__grey--dark: #707070;

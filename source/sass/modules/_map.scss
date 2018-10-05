@@ -1,0 +1,14 @@
+#map {
+	height: 790px;
+	@include border-radius(5px);
+	color: $color__grey--dark;
+	@include media(portable) {
+		height: 360px;
+	}
+}
+
+.map-wrapper {
+	@include media(portable) {
+		padding: 0 $spacing--small;
+	}
+}

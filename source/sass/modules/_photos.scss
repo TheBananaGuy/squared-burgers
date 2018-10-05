@@ -1,0 +1,24 @@
+#app {
+	@include box-sizing(border-box);
+	margin: 0;
+	padding: $spacing 0;
+	width: 100%;
+}
+
+.venuePhoto {
+	display: inline-block;
+	@include box-sizing(border-box);
+	margin: 0;
+	padding: $spacing--small;
+	width: 25%;
+	img {
+		@include box-sizing(border-box);
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		border: 1px solid $color__grey--dark;
+	}
+	@include media(portable) {
+		width: 50%;
+	}
+}
